@@ -9,4 +9,8 @@ async function getQuote(url) {
   author.innerHTML = data[0].author;
 }
 
+function tweet() {
+  window.open(`https://twitter.com/intent/tweet?text=${quote.innerText} ---by ${author.innerText}`, "Tweet windos", "width=600, height=600")
+}
+
 window.addEventListener("DOMContentLoaded", getQuote(api_url));
