@@ -1,6 +1,7 @@
 const api_url = "https://api.quotable.io/quotes/random";
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
+
 async function getQuote(url) {
   const response = await fetch(url);
   var data = await response.json();
