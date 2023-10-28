@@ -5,4 +5,5 @@ async function getQuote(url) {
   var data = await response.json();
   console.log(data[0].content)
 }
-getQuote(api_url);
+
+window.addEventListener("DOMContentLoaded", getQuote(api_url));
